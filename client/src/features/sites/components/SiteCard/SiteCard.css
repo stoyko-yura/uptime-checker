@@ -1,0 +1,85 @@
+.site-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #f0f0f0;
+}
+
+.site-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.site-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.site-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #1a1a1a;
+}
+
+.site-url {
+    font-size: 0.85rem;
+    color: #666;
+    text-decoration: none;
+}
+
+.site-url:hover {
+    text-decoration: underline;
+}
+
+.status-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.status-online {
+    background-color: #e6fffa;
+    color: #2c7a7b;
+}
+
+.status-offline {
+    background-color: #fff5f5;
+    color: #c53030;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.dot-online { background-color: #38a169; }
+.dot-offline { background-color: #e53e3e; }
+
+.delete-btn {
+    background: none;
+    border: 1px solid #ffccc7;
+    color: #ff4d4f;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.2s;
+}
+
+.delete-btn:hover {
+    background: #fff1f0;
+    border-color: #ff4d4f;
+}
